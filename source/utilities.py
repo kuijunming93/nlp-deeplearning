@@ -14,6 +14,7 @@ def cleanText(input):
         r"\'d'": "would",
         r"won't'": "will not",
         r"can't'": "cannot",
+        r"bout": "about",
         r"[-()\"#/@;:{}+=~|.?,]": ""
     }
     output = input.lower()

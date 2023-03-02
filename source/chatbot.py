@@ -3,6 +3,7 @@ import tensorflow as tf
 import re
 import time
 import utilities
+import neuralnet
 
 # DATA PROCESSING
 # reading raw files into memory for processing
@@ -58,3 +59,7 @@ for length in range(1, 25 + 1):
         if len(value) == length:
             sorted_clean_questions.append(value)
             sorted_clean_answers.append(clean_answers_intoInt[ind])
+
+
+# test
+neuralnet.model_inputs()
